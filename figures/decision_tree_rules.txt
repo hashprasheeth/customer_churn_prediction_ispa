@@ -1,0 +1,22 @@
+|--- PaymentMethod_Electronic check <= 0.50
+|   |--- tenure <= 7.50
+|   |   |--- InternetService_Fiber optic <= 0.50
+|   |   |   |--- class: 0
+|   |   |--- InternetService_Fiber optic >  0.50
+|   |   |   |--- class: 1
+|   |--- tenure >  7.50
+|   |   |--- InternetService_Fiber optic <= 0.50
+|   |   |   |--- class: 0
+|   |   |--- InternetService_Fiber optic >  0.50
+|   |   |   |--- class: 0
+|--- PaymentMethod_Electronic check >  0.50
+|   |--- Dependents <= 0.50
+|   |   |--- tenure <= 26.50
+|   |   |   |--- class: 1
+|   |   |--- tenure >  26.50
+|   |   |   |--- class: 1
+|   |--- Dependents >  0.50
+|   |   |--- tenure <= 4.50
+|   |   |   |--- class: 1
+|   |   |--- tenure >  4.50
+|   |   |   |--- class: 0
